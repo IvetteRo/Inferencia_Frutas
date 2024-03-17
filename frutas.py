@@ -1,6 +1,7 @@
 class MaquinaInferencia:
     def _init_(self):
         self.base_conocimientos = {
+           #equipo Los Inges2
             "Pera": [("¿Es verde por fuera?", 0.5), ("¿Es blanca por dentro?", 0.5)],
             "Manzana": [("¿Es roja por fuera?", 0.33), ("¿Es blanca por dentro?", 0.33), ("¿Se puede morder?", 0.34)],
             "Kiwi": [("¿Es cafe por fuera?", 0.33), ("¿Es verde por dentro?", 0.33), ("¿Tiene textura aspera?", 0.34)],
@@ -11,6 +12,49 @@ class MaquinaInferencia:
             "higo": [("¿Es morado por fuera?", 0.33), ("¿Tiene semillas en el centro?", 0.33), ("¿Es dulce por dentro?", 0.34)],
             "Toronja": [("¿Es naranja por fuera?", 0.25), ("¿Es naranja por dentro?", 0.25), ("¿es redonda?", 0.25), ("¿Es agria?", 0.25)],
             "lima": [("¿Es amarilla por dentro y fuera?", 0.25), ("¿Es agridulce?", 0.25), ("¿Es citrica?", 0.25), ("¿Tiene forma esferica u ovalada?", 0.25)],
+            #equipo DDJA
+            "Pitaya": [()],
+            "Fruta estrella": [()],
+            "Aguacate": [()],
+            "Tamarindo": [()],
+            "Grosella": [()],
+            "Chirimoya": [()],
+            "Guanábana": [()],
+            "Tejocote": [()],
+            "Níspero": [()],
+            #equipo Navitas
+            "Carambola": [()],
+            "Granada": [()],
+            "Piña": [()],
+            "Rambután": [()],
+            "Cereza": [()],
+            "Baya": [()],
+            "Chabacano": [()],
+            "Ciruela": [()],
+            #equipo Thanos
+            "Chayote": [()],
+            "Granadilla": [()],
+            "Pómelo": [()],
+            "Zapote blanco": [()],
+            "Pasa": [()],
+            "Pepino dulce": [()],
+            "Berenjena": [()],
+            "Kiwi Dorado": [()],
+            "Habanero": [()],
+            "Plátano macho": [()],
+            "Uchuva": [()],
+            #equipo Los Magaly
+            "Jitomate": [()],
+            "Mora": [()],
+            "Frambuesa": [()],
+            "Naranja": [()],
+            "": [()],
+            "": [()],
+            "": [()],
+            "": [()],
+            "": [()],
+            "": [()],
+            "": [()],
         }
         self.frutas = list(self.base_conocimientos.keys())
 
@@ -31,7 +75,7 @@ class MaquinaInferencia:
 
         return None, 0
 
-if _name_ == "_main_":
+if __name__ == "_main_":
     maquina = MaquinaInferencia()
 
     print("Por favor, responde las siguientes preguntas con Sí o No:")
